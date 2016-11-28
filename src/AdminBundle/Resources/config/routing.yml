@@ -1,0 +1,15 @@
+admin_homepage:
+    path:     /admin/{name}
+    defaults: { _controller: AdminBundle:Default:index }
+
+admin_dashboard:
+  path:        /dashboard
+  defaults:  { _controller: AdminBundle:Default:dashboard }
+
+admin_layout:
+  path:        /layout
+  defaults:  { _controller: AdminBundle:Default:layout }
+
+path_charts:
+  path:        /statistics
+  defaults:  { _controller: AdminBundle:Default:charts }
