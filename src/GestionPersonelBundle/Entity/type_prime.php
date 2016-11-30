@@ -21,27 +21,13 @@ class type_prime
      */
     private $id;
 
-    /**
-     * @var \DateTime
-     *
-     * @ORM\Column(name="date", type="date")
-     */
-    private $date;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="motif", type="string", length=255)
+     * @ORM\Column(name="libelle", type="string", length=255)
      */
-    private $motif;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="description", type="text")
-     */
-    private $description;
-
+    private $libelle;
 
     /**
      * Get id
@@ -53,38 +39,16 @@ class type_prime
         return $this->id;
     }
 
+
     /**
-     * Set date
+     * Set libelle
      *
-     * @param \DateTime $date
+     * @param string $libelle
      * @return type_prime
      */
-    public function setDate($date)
+    public function setLibelle($libelle)
     {
-        $this->date = $date;
-
-        return $this;
-    }
-
-    /**
-     * Get date
-     *
-     * @return \DateTime 
-     */
-    public function getDate()
-    {
-        return $this->date;
-    }
-
-    /**
-     * Set motif
-     *
-     * @param string $motif
-     * @return type_prime
-     */
-    public function setMotif($motif)
-    {
-        $this->motif = $motif;
+        $this->libelle = $libelle;
 
         return $this;
     }
@@ -94,31 +58,10 @@ class type_prime
      *
      * @return string 
      */
-    public function getMotif()
+    public function getLibelle()
     {
-        return $this->motif;
+        return $this->libelle;
     }
 
-    /**
-     * Set description
-     *
-     * @param string $description
-     * @return type_prime
-     */
-    public function setDescription($description)
-    {
-        $this->description = $description;
-
-        return $this;
-    }
-
-    /**
-     * Get description
-     *
-     * @return string 
-     */
-    public function getDescription()
-    {
-        return $this->description;
-    }
+  
 }
