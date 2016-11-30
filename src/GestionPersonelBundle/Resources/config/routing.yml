@@ -1,0 +1,3 @@
+gestion_personel_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: GestionPersonelBundle:Default:index }
