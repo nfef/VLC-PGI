@@ -28,13 +28,6 @@ class type_absence
      */
     private $intitule;
 
-    /**
-     * @var integer
-     *
-     * @ORM\Column(name="nbrejour", type="integer")
-     */
-    private $nbrejour;
-
 
     /**
      * Get id
