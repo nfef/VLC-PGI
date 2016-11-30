@@ -31,7 +31,7 @@ class contrat
     /**
      * @var string
      *
-     * @ORM\Column(name="dateentree", type="string", length=255)
+     * @ORM\Column(name="dateentree", type="date")
      */
     private $dateentree;
 
